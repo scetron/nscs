@@ -7,11 +7,11 @@
   checkcommands:
     - parser: NAPALM
       path: "$version$"
-      exclude:
+      exclude: ""
       command: "show version"
       platform: arista_eos
     - parser: TEXTFSM
       path: "$version$"
-      exclude:
+      exclude: ""
       command: "show version"
       platform: nxos
