@@ -1,0 +1,17 @@
+---
+- name: version
+  check_type: EXACT_MATCH
+  description: ""
+  severity: INFO
+  check_type_options: ""
+  checkcommands:
+    - parser: NAPALM
+      path: "$version$"
+      exclude:
+      command: "show version"
+      platform: arista_eos
+    - parser: TEXTFSM
+      path: "$version$"
+      exclude:
+      command: "show version"
+      platform: nxos
