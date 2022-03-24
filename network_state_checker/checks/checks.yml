@@ -13,3 +13,4 @@
       path: "$version$"
       command: "show version"
       platform: nxos
+      exclude:
